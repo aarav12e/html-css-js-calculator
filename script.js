@@ -47,24 +47,24 @@ function calculate() {
   isSecond = false;
 }
 
-// function clearDisplay() {
-//   firstValue = "";
-//   secondValue = "";
-//   operator = "";
-//   isSecond = false;
-//   display.value = "";
-// }
+function clearDisplay() {
+  firstValue = "";
+  secondValue = "";
+  operator = "";
+  isSecond = false;
+  display.value = "";
+}
 
-// function deleteLast() {
-//   if (!isSecond) {
-//     firstValue = firstValue.slice(0, -1);
-//     display.value = firstValue;
-//   } else if (secondValue !== "") {
-//     secondValue = secondValue.slice(0, -1);
-//     display.value = firstValue + " " + operator + " " + secondValue;
-//   } else {
-//     operator = "";
-//     isSecond = false;
-//     display.value = firstValue;
-//   }
-// }
+function deleteLast() {
+  if (!isSecond) {
+    firstValue = firstValue.slice(0, -1);
+    display.value = firstValue;
+  } else if (secondValue !== "") {
+    secondValue = secondValue.slice(0, -1);
+    display.value = firstValue + " " + operator + " " + secondValue;
+  } else {
+    operator = "";
+    isSecond = false;
+    display.value = firstValue;
+  }
+}
